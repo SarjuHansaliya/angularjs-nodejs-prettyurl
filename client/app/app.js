@@ -6,7 +6,7 @@ var app = angular.module('prettyUrl',[
 		'oc.lazyLoad',
 	]);
 
-app.config(['$stateProvider', '$urlRouterProvider',function($stateProvider, $urlRouterProvider){
+app.config(['$stateProvider', '$urlRouterProvider','$locationProvider',function($stateProvider, $urlRouterProvider,$locationProvider){
 	$stateProvider
 		.state('screen1',{
 			url : '/screen1',
@@ -42,4 +42,6 @@ app.config(['$stateProvider', '$urlRouterProvider',function($stateProvider, $url
 		});
 
 	$urlRouterProvider.otherwise('/screen1');
+
+	$locationProvider.html5Mode(true);
 }])
