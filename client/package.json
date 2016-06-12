@@ -8,16 +8,14 @@
   },
   "author": "Sarju Hansaliya",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "css-loader": "^0.23.1",
     "html-loader": "^0.4.3",
     "json-loader": "^0.5.4",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
-    "webpack": "^1.13.1"
-  },
-  "dependencies": {
+    "webpack": "^1.13.1",
     "angular": "^1.5.6",
     "angular-ui-router": "^0.3.1",
     "oclazyload": "^1.0.9"
