@@ -26,7 +26,7 @@ app.config(['$stateProvider', '$urlRouterProvider','$locationProvider',function(
 		})
 		.state('screen2',{
 			url : '/screen2',
-			template: "<screen1></screen1>",
+			template: "<screen2></screen2>",
 			resolve : {
 				load : ['$q','$ocLazyLoad',function($q,$ocLazyLoad) {
 					var defer = $q.defer();

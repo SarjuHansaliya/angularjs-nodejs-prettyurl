@@ -20,7 +20,7 @@ webpackJsonp([1],{
 /***/ 6:
 /***/ function(module, exports) {
 
-	module.exports = "<H1>Screen 1</H1>";
+	module.exports = "<H1>Screen 1</H1>\r\n<a ui-sref=\"screen2\">Go to Screen 2</a>";
 
 /***/ }
 
