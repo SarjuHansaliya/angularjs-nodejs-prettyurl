@@ -140,6 +140,10 @@
 
 		$urlRouterProvider.otherwise('/screen1');
 
+
+		//Client side Configuration to pretty url
+		//Remove # from url
+
 		$locationProvider.html5Mode(true);
 	}])
 

@@ -29,13 +29,14 @@ app.post('/test',function(req,res,next){
 });
 
 
-// catch 404 and forward to error handler
-//This must be the last
-app.use(function(req, res, next) {
-  var err = new Error('Not Found');
-  err.status = 404;
-  next(err);
-});
+//If nothing matches
+//We will send index file to client side
+//So angular will take care of that route
+//If we call url without hash control will go here
+app.use('*',function(req,res,next){
+	var indexFile = path.resolve(__dirname,'../client/build/index.html');
+	res.sendFile(indexFile);
+})
 
 // error handlers
 
